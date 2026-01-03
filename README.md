@@ -183,5 +183,3 @@ This project provides hands-on experience with:
 * UI/UX building with AntD forms, tables, and responsive Tailwind layouts
 
 ---
-
-If you want, I can also generate a **nice README “Project Setup” section** (frontend/backend install commands, env variables, folder structure) based on how you plan to organize the repo (monorepo vs separate folders).
