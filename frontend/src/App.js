@@ -1,8 +1,30 @@
 import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routers, Route } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ConfigProvider } from 'antd' ; 
 import './App.css';
 
+
+//Layout components
+import Layout from './components/Layout';
+import PrivateRoute from './components/PrivateRoute';
+
+//Pages
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from '.pages/Register';
+import ItemDetails from '/pages/ItemDetails';
+import CreateItem from './pages/CreateItem';
+import Dashboard from './pages/Dashboard';
+import ClaimDetails from './pages/ClaimDetails';
+import AdminPanel from './pages/AdminPanel';
+
+const queryClient = QueryClient();
+
+
 function App() {
-  return (
+  return (  
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
