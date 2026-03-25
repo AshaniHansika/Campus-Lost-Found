@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/api/reports', require('./routes/reports'));
 
 // Database connection
 mongoose.connect(process.env.MONGODB_URI, {

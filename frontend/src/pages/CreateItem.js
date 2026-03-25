@@ -74,6 +74,8 @@ const CreateItem = () => {
   return (
     <div className="max-w-2xl mx-auto p-6">
       <Card title="Post Lost/Found Item">
+       <p className="text-gray-600 mb-4">Create item form is under construction.</p>
+       <Button type="primary">Submit Post</Button>
         <Form
           form={form}
           layout="vertical"
